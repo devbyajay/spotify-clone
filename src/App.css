@@ -1,0 +1,291 @@
+::-webkit-scrollbar{
+  width: 4px;
+  
+}
+::-webkit-scrollbar-thumb{
+background-color: #7D7C7C;
+height: 20px;
+}
+::-webkit-scrollbar-track{
+  background-color: black;
+  
+}
+
+
+.body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.spotify{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.container{
+  height: 98vh;
+  width: 99%;
+  background-color: black;
+  display: grid;
+  padding: 5px;
+  grid-template-columns: .7fr 1fr 1fr;
+  grid-template-rows:0.5fr 1fr 1fr 0.3fr ;
+  grid-template-areas: 
+    "home cont cont"
+    "side cont cont"
+    "side cont cont"
+    "foot foot foot";
+  gap: 5px;
+}
+.home{
+  grid-area: home;
+  background-color: #171419;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.sidebar{
+  grid-area: side;
+  background-color: #171419;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  
+}
+.content{
+  grid-area: cont;
+  background-color: #171419;
+  border-radius: 5px;
+  overflow: scroll;
+  overflow-x: hidden;
+  
+}
+.footer{
+  grid-area: foot;
+  background-color: black;
+  border-radius: 5px;
+}
+.homecont{
+  cursor: pointer;
+  height: 70%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+ 
+}
+ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+#icons {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+li{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+li h{
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    transform: translateY(3px);
+}
+
+
+.conts-body{
+  position: relative;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  overflow: scroll;
+  overflow-x: hidden;
+  flex-wrap: wrap;
+ 
+}
+.cards{
+  position: relative;
+  height: 245px;
+  width: 170px;
+  border-radius: 15px;
+  background-color: #1e1b22;
+  cursor: pointer;
+  
+}
+
+.cards:hover{
+  background-color: #28252a;
+  transition: 1s;
+}
+.cards-pad{
+  position: relative;
+  height: 215px;
+  width: 140px ;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.Image{
+  position: relative;
+  height: 140px;
+  width: 140px;
+  border-radius: 8px;
+  box-shadow: 3px 3px 10px #1e1b22;
+ 
+}
+#pro-img{
+  border-radius: 50%;
+}
+
+
+#spe-he{
+  font-size: .9rem;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+  
+}
+#spe-pa{
+  font-size: 0.8rem;
+  color: rgb(223, 208, 208);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+
+}
+
+
+.icon{
+  height: 25px;
+  width: 25px;
+  color: rgb(60, 210, 60);
+  transform: translate(120px,-70px);
+  
+}
+.icon :hover{
+  cursor: pointer;
+  
+}
+
+/*for footer component*/
+#contrl-1{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: 
+      "cur aud aud"
+  ;
+  gap: 10px;
+}
+.current{
+  grid-area: cur;
+ display: flex;
+}
+.audio{
+  grid-area: aud;
+ 
+}
+.profile{
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.optionals{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+h{
+  font-size: 1rem;
+  color:  white;;
+}
+#head{
+  font-size: 0.7rem;
+  color: rgb(223, 208, 208);
+}
+.audio{
+  display: flex;
+  align-items: center;
+}
+audio{
+  position: relative;
+  width: 80%;
+}
+.sideimg{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 3px white solid;
+}
+.shrink{
+  display: flex;
+  height: 110px;
+  gap: 10px;
+  
+  
+}
+#wave{
+  height: 100px;
+  width: 3px;
+  background: linear-gradient(45deg,rgb(60, 210, 60),white);
+  border-radius: 4px;
+  animation: shrinker 1s linear infinite ;
+}
+
+#wave:nth-child(2){
+  animation-delay: 1s ;
+}
+#wave:nth-child(3){
+  animation-delay: 0.9s;
+}
+#wave:nth-child(4){
+  animation-delay: 0.8s;
+}
+#wave:nth-child(5){
+  animation-delay: 0.7s;
+}
+#wave:nth-child(6){
+  animation-delay: 0.6s;
+}
+#wave:nth-child(7){
+  animation-delay: 0.5s;
+}
+#wave:nth-child(8){
+  animation-delay: 0.4s;
+}
+#wave:nth-child(9){
+  animation-delay: 0.3s;
+}
+#wave:nth-child(10){
+  animation-delay: 0.2s;
+}
+
+@keyframes shrinker{
+  0%{
+    transform: scale(0);
+  }
+  50%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(0);
+  }
+}
