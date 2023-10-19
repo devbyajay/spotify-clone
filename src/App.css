@@ -233,7 +233,8 @@ audio{
   height: 200px;
   width: 200px;
   border-radius: 50%;
-  border: 3px white solid;
+  border: 3px solid;
+  border-image-source: linear-gradient(45deg,rgb(60, 210, 60),white);
 }
 .shrink{
   display: flex;
