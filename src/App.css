@@ -338,6 +338,9 @@ audio{
     grid-area: foot;
     background-color: black;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .sideimg{
     display: none;
@@ -366,14 +369,30 @@ audio{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 7px;
+    gap: 3px;
   }
   h{
-    font-size: .5rem;
+    font-size: .9rem;
     color:  white;;
   }
   #head{
-    font-size: 0.3rem;
+    font-size: 0.5rem;
     color: rgb(223, 208, 208);
+  }
+  #contrl-1{
+    position: relative;
+    height: 100%;
+    width: 85%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+        "cur aud aud"
+    ;
+    gap: 4px;
+  }
+  .current{
+    grid-area: cur;
+   display: flex;
+   gap: 7px;
   }
 }
