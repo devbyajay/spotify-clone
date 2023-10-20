@@ -298,7 +298,7 @@ audio{
     display: grid;
     padding: 5px;
     grid-template-columns: 1fr;
-    grid-template-rows:.2fr 1fr .4fr .8fr ;
+    grid-template-rows:.2fr 1fr .4fr .7fr ;
     grid-template-areas: 
       'home'
       'cont'
@@ -338,5 +338,26 @@ audio{
     grid-area: foot;
     background-color: black;
     border-radius: 5px;
+  }
+  .sideimg{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 3px white solid;
+    
+  }
+  .shrink{
+    display: flex;
+    height: 50px;
+    gap: 10px;
+    
+    
+  }
+  #wave{
+    height: 50px;
+    width: 3px;
+    background: linear-gradient(45deg,rgb(60, 210, 60),white);
+    border-radius: 2px;
+    animation: shrinker 1s linear infinite ;
   }
 }
