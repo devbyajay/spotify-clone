@@ -298,7 +298,7 @@ audio{
     display: grid;
     padding: 5px;
     grid-template-columns: 1fr;
-    grid-template-rows:.2fr 1fr .4fr .7fr ;
+    grid-template-rows:.2fr 1.5fr .4fr .5fr ;
     grid-template-areas: 
       'home'
       'cont'
