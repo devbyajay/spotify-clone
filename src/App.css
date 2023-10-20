@@ -361,4 +361,19 @@ audio{
     border-radius: 2px;
     animation: shrinker 1s linear infinite ;
   }
+  .optionals{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+  }
+  h{
+    font-size: .5rem;
+    color:  white;;
+  }
+  #head{
+    font-size: 0.3rem;
+    color: rgb(223, 208, 208);
+  }
 }
