@@ -290,7 +290,7 @@ audio{
     transform: scale(0);
   }
 }
-@media(min-width:377px) and (max-width:600px){
+@media(min-width:300px) and (max-width:600px){
   .container{
     height: 98vh;
     width: 99%;
@@ -340,6 +340,7 @@ audio{
     border-radius: 5px;
   }
   .sideimg{
+    display: none;
     height: 100px;
     width: 100px;
     border-radius: 50%;
