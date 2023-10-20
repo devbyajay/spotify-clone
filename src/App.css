@@ -290,3 +290,53 @@ audio{
     transform: scale(0);
   }
 }
+@media(min-width:377px) and (max-width:600px){
+  .container{
+    height: 98vh;
+    width: 99%;
+    background-color: black;
+    display: grid;
+    padding: 5px;
+    grid-template-columns: 1fr;
+    grid-template-rows:.2fr 1fr .4fr .8fr ;
+    grid-template-areas: 
+      'home'
+      'cont'
+      'side'
+      'foot';
+    gap: 5px;
+  }
+  .home{
+    grid-area: home;
+    background-color: #171419;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .sidebar{
+    grid-area: side;
+    background-color: #171419;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .content{
+    grid-area: cont;
+    background-color: #171419;
+    border-radius: 5px;
+    overflow: scroll;
+    overflow-x: hidden;
+    
+  }
+  .footer{
+    grid-area: foot;
+    background-color: black;
+    border-radius: 5px;
+  }
+}
