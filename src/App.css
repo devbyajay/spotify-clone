@@ -291,6 +291,18 @@ audio{
   }
 }
 @media(min-width:300px) and (max-width:600px){
+  ::-webkit-scrollbar{
+    width: 4px;
+    
+  }
+  ::-webkit-scrollbar-thumb{
+  background-color: #7D7C7C;
+  height: 20px;
+  }
+  ::-webkit-scrollbar-track{
+    background-color: black;
+    
+  }
   .container{
     height: 98vh;
     width: 99%;
@@ -394,5 +406,69 @@ audio{
     grid-area: cur;
    display: flex;
    gap: 7px;
+  }
+  /*card component */
+  .cards{
+    position: relative;
+    height: 100px;
+    width: 90%;
+    border-radius: 10px;
+    background-color: #1e1b22;
+    cursor: pointer;
+    
+  }
+  
+  .cards:hover{
+    background-color: #28252a;
+    transition: 1s;
+  }
+  .cards-pad{
+    position: relative;
+    height: 95px;
+    width: 90% ;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+  .Image{
+    position: relative;
+    height: 60px;
+    width: 60px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px #1e1b22;
+   
+  }
+  #pro-img{
+    border-radius: 50%;
+  }
+  
+  
+  #spe-he{
+    font-size: .9rem;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    
+  }
+  #spe-pa{
+    font-size: 0.8rem;
+    color: rgb(223, 208, 208);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+  
+  }
+  
+  
+  .icon{
+    height: 25px;
+    width: 25px;
+    color: rgb(60, 210, 60);
+    transform: translate(120px,-70px);
+    
+  }
+  .icon :hover{
+    cursor: pointer;
+    
   }
 }
