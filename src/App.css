@@ -315,13 +315,13 @@ audio{
     display: grid;
     padding: 5px;
     grid-template-columns: 1fr;
-    grid-template-rows:.1fr 1.5fr .2fr .4fr ;
+    grid-template-rows:.1fr 1.5fr .2fr .2fr ;
     grid-template-areas: 
       'home'
       'cont'
       'side'
       'foot';
-    gap: 5px;
+    gap: 3px;
   }
   .home{
     grid-area: home;
