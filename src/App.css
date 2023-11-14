@@ -301,7 +301,7 @@ audio{
     
   }
   ::-webkit-scrollbar-thumb{
-  background-color: #7D7C7C;
+  background-color: black;
   height: 20px;
   }
   ::-webkit-scrollbar-track{
@@ -382,7 +382,7 @@ audio{
     animation: shrinker 1s linear infinite ;
   }
   .optionals{
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -399,9 +399,9 @@ audio{
   #contrl-1{
     position: relative;
     height: 100%;
-    width: 85%;
+    width: 90%;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: .4fr 2fr;
     grid-template-areas: 
         "cur aud aud"
     ;
@@ -495,5 +495,19 @@ audio{
   .icon :hover{
     cursor: pointer;
     
+  }
+  .audio{
+    grid-area: aud;
+    width: 100%;
+   
+  }
+  .profile{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .audiocontrols{
+    width: 100%;
   }
 }

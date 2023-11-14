@@ -179,7 +179,7 @@ function App() {
        audioRef.current.play();
     }, [src]);
    
-    return <audio ref={audioRef} src={src}  controls/>;
+    return <audio ref={audioRef} src={src} className='audiocontrols' controls/>;
    };
    const [audioSrc, setAudioSrc] = React.useState('');
    
