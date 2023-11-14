@@ -222,7 +222,7 @@ function App() {
             return(
               <div className='cards' >
                 <div className='cards-pad'>
-                  <img  className ='Image' src={music.imageurl} alt='' />
+                  <div className='image'><img  className ='Image' src={music.imageurl} alt='' /></div>
                   <div className='card-det'>
                     <h id='spe-he'>{music.name}</h>
                     <h id= 'spe-pa'>{music.lyrics}</h>

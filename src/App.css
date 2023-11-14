@@ -445,15 +445,23 @@ audio{
     grid-template-areas:
     'im car ico'
     ;
+    padding: 2px 2px 2px 10px;
   }
   .card-det{
     grid-area: car;
     display: flex;
     flex-direction: column;
     gap: 5px;
+    justify-content: center;
+  }
+  .image{
+    grid-area: im;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .Image{
-    grid-area: im;
+    
     position: relative;
     height: 30px;
     width: 30px;
@@ -465,7 +473,9 @@ audio{
     grid-area: ico;
     height: 100%;
     width: 100%;
-   
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   #pro-img{
     border-radius: 50%;
@@ -487,10 +497,10 @@ audio{
   
   }
   .icon{
-    height: 10px;
-    width: 10px;
+    height: 15px;
+    width: 15px;
     color: rgb(60, 210, 60);
-    transform: translate(40px,5px);
+    transform: translate(0px,0px);
   }
   .icon :hover{
     cursor: pointer;
