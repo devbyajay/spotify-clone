@@ -223,8 +223,10 @@ function App() {
               <div className='cards' >
                 <div className='cards-pad'>
                   <img  className ='Image' src={music.imageurl} alt='' />
-                  <h id='spe-he'>{music.name}</h>
-                  <h id= 'spe-pa'>{music.lyrics}</h>
+                  <div className='card-det'>
+                    <h id='spe-he'>{music.name}</h>
+                    <h id= 'spe-pa'>{music.lyrics}</h>
+                  </div>
                   <FaPlay className='icon play' id={music.id} onClick={()=>{
                       setbutid(music.id);
                       setAudioSrc(music.song)

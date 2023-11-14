@@ -139,6 +139,11 @@ li h{
   flex-direction: column;
   gap: 5px;
 }
+.card-det{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
 .Image{
   position: relative;
   height: 140px;
@@ -310,7 +315,7 @@ audio{
     display: grid;
     padding: 5px;
     grid-template-columns: 1fr;
-    grid-template-rows:.2fr 1.5fr .4fr .5fr ;
+    grid-template-rows:.1fr 1.5fr .2fr .4fr ;
     grid-template-areas: 
       'home'
       'cont'
@@ -410,8 +415,8 @@ audio{
   /*card component */
   .cards{
     position: relative;
-    height: 100px;
-    width: 90%;
+    height: 60px;
+    width: 300px;
     border-radius: 10px;
     background-color: #1e1b22;
     cursor: pointer;
@@ -424,17 +429,21 @@ audio{
   }
   .cards-pad{
     position: relative;
-    height: 95px;
+    height: 90%;
     width: 90% ;
-    padding: 16px;
     display: flex;
     flex-direction: row;
+    gap: 10px;
+  }
+  .card-det{
+    display: flex;
+    flex-direction: column;
     gap: 5px;
   }
   .Image{
     position: relative;
-    height: 60px;
-    width: 60px;
+    height: 30px;
+    width: 30px;
     border-radius: 8px;
     box-shadow: 3px 3px 10px #1e1b22;
    
@@ -445,27 +454,24 @@ audio{
   
   
   #spe-he{
-    font-size: .9rem;
+    font-size: .7rem;
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
+    margin: 0;
     
   }
   #spe-pa{
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     color: rgb(223, 208, 208);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
   
   }
-  
-  
   .icon{
-    height: 25px;
-    width: 25px;
+    height: 10px;
+    width: 10px;
     color: rgb(60, 210, 60);
-    transform: translate(120px,-70px);
-    
+    transform: translate(40px,5px);
   }
   .icon :hover{
     cursor: pointer;
