@@ -412,6 +412,17 @@ audio{
    display: flex;
    gap: 7px;
   }
+  .conts-body{
+    position: relative;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    overflow: scroll;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+   
+  }
   /*card component */
   .cards{
     position: relative;
@@ -423,29 +434,37 @@ audio{
     
   }
   
-  .cards:hover{
-    background-color: #28252a;
-    transition: 1s;
-  }
+  
   .cards-pad{
     position: relative;
     height: 90%;
     width: 90% ;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr  ;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    'im car ico'
+    ;
   }
   .card-det{
+    grid-area: car;
     display: flex;
     flex-direction: column;
     gap: 5px;
   }
   .Image{
+    grid-area: im;
     position: relative;
     height: 30px;
     width: 30px;
     border-radius: 8px;
     box-shadow: 3px 3px 10px #1e1b22;
+   
+  }
+  .icodiv{
+    grid-area: ico;
+    height: 100%;
+    width: 100%;
    
   }
   #pro-img{

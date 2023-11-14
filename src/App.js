@@ -227,10 +227,12 @@ function App() {
                     <h id='spe-he'>{music.name}</h>
                     <h id= 'spe-pa'>{music.lyrics}</h>
                   </div>
-                  <FaPlay className='icon play' id={music.id} onClick={()=>{
+                  <div className='icodiv'>
+                    <FaPlay className='icon play' id={music.id} onClick={()=>{
                       setbutid(music.id);
                       setAudioSrc(music.song)
                     }}/>
+                    </div>
                 </div>
               </div>
               )
