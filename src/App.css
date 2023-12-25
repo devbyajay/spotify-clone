@@ -123,6 +123,7 @@ li h{
   border-radius: 15px;
   background-color: #1e1b22;
   cursor: pointer;
+  resize: horizontal;
   
 }
 
@@ -296,6 +297,9 @@ audio{
   }
 }
 @media(min-width:300px) and (max-width:600px){
+  *:focus {
+    outline: none;
+  }
   ::-webkit-scrollbar{
     width: 4px;
     
@@ -431,9 +435,9 @@ audio{
     border-radius: 10px;
     background-color: #1e1b22;
     cursor: pointer;
-    
+   
   }
-  
+ 
   
   .cards-pad{
     position: relative;
@@ -502,10 +506,7 @@ audio{
     color: rgb(60, 210, 60);
     transform: translate(0px,0px);
   }
-  .icon :hover{
-    cursor: pointer;
-    
-  }
+ 
   .audio{
     grid-area: aud;
     width: 100%;
